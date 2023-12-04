@@ -24,7 +24,7 @@ def main():
                         f'https://http-api.livecoinwatch.com/markets?currency=USD&limit=30&search=USDT&offset={offset}&sort=price&order=descending&coin={coin}',
                         headers=headers)
                     if not r.json()['data']:
-                        keep = False
+                        break
                     for i in r.json()['data']:
                         if i['base'] == coin and i['quote'] == 'USDT' and i['exchange'] in all_exchanges:
                             max_val = [i['exchange'], i['rate']]
@@ -43,7 +43,7 @@ def main():
                         f'https://http-api.livecoinwatch.com/markets?currency=USD&limit=30&search=USDT&offset={offset}&sort=price&order=ascending&coin={coin}',
                         headers=headers)
                     if not r.json()['data']:
-                        keep = False
+                        break
                     for i in r.json()['data']:
                         if i['base'] == coin and i['quote'] == 'USDT' and i['exchange'] in all_exchanges:
                             min_val = [i['exchange'], i['rate']]
