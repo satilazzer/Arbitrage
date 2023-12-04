@@ -1,0 +1,53 @@
+.form-control{
+    width: 200px!important;
+    margin-left: 10px;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sell{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+p{
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.container{
+    width: 1000px!important;
+    margin: 0 auto;
+}
+
+button{
+    margin-top: 10px!important;
+}
+
+table{
+margin-top: 20px;
+}
+
+
+.sum{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content{
+    padding-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+h2{
+    margin-bottom: 20px!important;
+}

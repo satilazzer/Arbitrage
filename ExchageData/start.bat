@@ -1,0 +1,1 @@
+cd ../ &&  cd ExchageData && python init.py && python manage.py runserver

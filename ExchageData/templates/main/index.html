@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{%block content%}
+<div class="content">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">coin</th>
+      <th scope="col">way</th>
+      <th scope="col">spread</th>
+    </tr>
+  </thead>
+  <tbody>
+   {% for i in data %}
+        <tr>
+            {% for j in i%}
+                <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+   {% endfor %}
+
+
+  </tbody>
+</table>
+
+</div>
+{%endblock%}
