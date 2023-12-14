@@ -14,7 +14,7 @@ while keep:
     headers = {
         'user-agent': ua.random,
     }
-    all_exchanges = 'kucoin,kraken,binance,mxc,bybit,whitebit,gate,huobi,cex,bitmart,hotbit,coinbasepro,hitbtc,exmo'
+    all_exchanges = 'kraken,binance,bybit,coinbasepro,exmo'
     r = requests.get(
         f'https://http-api.livecoinwatch.com/coins?offset={offset}&limit=200&sort=cap&order=descending&currency=USD&exchanges=kucoin%2Ckraken%2Cbinance%2Cmxc%2Cbybit%2Cwhitebit%2Cgate%2Chuobi%2Ccex%2Cbitmart%2Chotbit%2Ccoinbasepro%2Chitbtc%2Cexmo&platforms=',
         headers=headers)
